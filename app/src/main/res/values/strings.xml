@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LOOP</string>
+    <string name="map_api">AIzaSyCv8rm5VtkmtuJGEoNFTGCEsoe_fxtI0_I</string>
+    <string name="facebook_app_id">127497787942994</string>
+    <string-array name="arr_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="arr_optionstag">
+        <item>LowTag</item>
+        <item>MediumTag</item>
+        <item>HighTag</item>
+    </string-array>
+
+    <string name="just_now">Just Now</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">365aa499757334abbda885cb356c5bf6</string>
+
+    <bool name="isDebugEnabled">true</bool>
+    <string name="server_url">http://loopit.ml:7007</string>
+
+
+</resources>

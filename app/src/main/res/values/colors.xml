@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <color name="white">#f7f7f7</color>
+    <color name="off_white">#e4e4e3</color>
+    <color name="light_grey">#37474F</color>
+    <color name="fb_blue">#3b5998</color>
+    <color name="ourred">#e7304c</color>
+    <color name="holdercolor">#fafafa</color>
+    <color name="holder">#fafafa</color>
+    <color name="holderoff">#f7f7f7</color>
+    <color name="text_secondary">#c2c2c2</color>
+    <color name="text_primary">#7b7b7b</color>
+
+    <color name="newtext">#b4b4b4</color>
+    <color name="border">#eaeaea</color>
+    <color name="blue">#232323</color>
+    <color name="backwhite">#EDECED</color>
+    <color name="shadow">#d5d6d8</color>
+    <color name="border2">#bababa</color>
+
+    <color name="border3">#adadad</color>
+    <color name="trans">#ffffffff</color>
+    <color name="off_white1">#9c9c9c</color>
+
+    <color name="off_white2">#ffffff</color>
+
+
+
+    <color name="tabTextUnselectedColor">#e4e4e3</color>
+
+    <color name="backgroundevent">#f7f7f7</color>
+    <!-- not used-->
+    <!--<color name="backgroundevent">#ebebec</color>-->
+
+    <!-- New colors -->
+    <color name="green">#90AA9C</color>
+    <color name="custom_blue">#173440</color>
+    <color name="main_background">#f2f2f2</color>
+    <color name="item_text_color">@color/green</color>
+    <color name="orange">#85FFC7</color>
+
+    <color name="newone">#ee2c57</color>
+    <color name="newtwo">#f15e44</color>
+    <color name="unselected">#9c9c9c</color>
+    <color name="neworange">#f15e44</color>
+    <color name="newpink">#ee2c57</color>
+
+
+</resources>

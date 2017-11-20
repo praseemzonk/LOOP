@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/wait"
+
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="300dp"
+
+            android:layout_height="340dp"
+            android:layout_marginTop="80dp"
+            android:id="@+id/anima1"
+            app:lottie_imageAssetsFolder="images"
+
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loc.json"
+
+            android:layout_centerHorizontal="true"
+            app:lottie_loop="false" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/main"
+        android:visibility="gone"
+        android:layout_height="fill_parent">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:background="@drawable/pro1"
+        android:layout_marginLeft="-60dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/shout"
+        android:layout_width="120dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shout"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friends"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="220dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</RelativeLayout>

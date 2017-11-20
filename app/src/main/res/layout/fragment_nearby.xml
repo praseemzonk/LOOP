@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main_container"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="80dp"
+
+
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:id="@+id/anima1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_fileName="pulse_loader.json"
+            android:layout_centerHorizontal="true"
+            app:lottie_loop="true" />
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_width="wrap_content"
+            android:text="NEAR BY"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:textColor="@color/neworange"
+            android:layout_height="wrap_content" />
+
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_width="wrap_content"
+            android:text="Connect with near by developers, turn on the switch to discover."
+            android:textSize="14sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/off_white1"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/publish_switch"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nearby_devices_list_view"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

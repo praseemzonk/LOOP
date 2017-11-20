@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="360dp"
+    android:layout_margin="0dp"
+    android:padding="18dp"
+    android:background="#f2f2f2"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:id="@+id/close"
+        android:layout_margin="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/crossnew"/>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+     <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="HI PRASEEM"
+        android:textSize="28sp"
+         android:id="@+id/name"
+        android:textColor="#424242"
+        android:layout_height="wrap_content" />
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="Make a shoutout"
+        android:textSize="24sp"
+        android:textColor="#626262"
+        android:layout_height="wrap_content" />
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="Your shoutout will be visible to near by developers for 24 hours"
+        android:textSize="16sp"
+        android:textColor="#9c9c9c"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="#e4e4e3"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"></View>
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="What are you working on?"
+        android:textSize="20sp"
+        android:textColor="#626262"
+        android:layout_height="wrap_content" />
+    <com.zonk.fbtest.Views.RobotoBlackEditText
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/workingon"
+        android:layout_height="100dp"
+        android:background="#e4e4e3"/>
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="Skills you are looking for?"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#626262"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tablelist"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scrollbars="vertical" />
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="DONE"
+        android:textSize="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/done"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="14dp"
+        android:background="#e4e4e3"
+        android:layout_marginTop="30dp"
+        android:textColor="#424242"
+        android:layout_height="wrap_content" ></com.zonk.fbtest.Views.BariolBoldTextView>
+
+</LinearLayout>
+</RelativeLayout>

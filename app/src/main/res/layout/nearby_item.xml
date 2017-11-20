@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/newcustom"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content">
+
+
+
+        <com.zonk.fbtest.Utils.CircleImageView
+            android:id="@+id/xyz"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/dashedline"
+            android:layout_centerVertical="true" />
+
+
+        <com.zonk.fbtest.Utils.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@android:color/transparent"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="PRASEEM"
+        android:id="@+id/username"
+        android:textSize="22sp"
+        android:textColor="#424242"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:clipChildren="false">
+
+        <me.xiaopan.swsv.SpiderWebScoreView
+            android:id="@+id/score"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center" />
+
+        <me.xiaopan.swsv.CircularLayout
+            android:id="@+id/layout_mainActivity_circular1"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:clipChildren="false"/>
+    </FrameLayout>
+
+
+</LinearLayout>

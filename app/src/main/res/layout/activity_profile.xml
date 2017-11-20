@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <com.github.florent37.diagonallayout.DiagonalLayout xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:elevation="0dp"
+            android:paddingBottom="0dp"
+            diagonal:diagonal_angle="15"
+            diagonal:diagonal_direction="left"
+            diagonal:diagonal_position="bottom">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f2f2f2">
+
+            </RelativeLayout>
+        </com.github.florent37.diagonallayout.DiagonalLayout>
+        <com.github.florent37.diagonallayout.DiagonalLayout xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:elevation="0dp"
+            android:paddingBottom="0dp"
+            android:layout_above="@+id/abc"
+
+            diagonal:diagonal_angle="15"
+            android:layout_marginTop="60dp"
+            diagonal:diagonal_direction="left"
+            diagonal:diagonal_position="top">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:descendantFocusability="blocksDescendants"
+
+                    android:paddingBottom="100dp"
+                    android:background="#f2f2f2">
+
+
+                    <com.zonk.fbtest.Views.BariolBoldTextView
+                        android:layout_width="wrap_content"
+                        android:text="SKILLS"
+                        android:textColor="#424242"
+                        android:textSize="28sp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_height="wrap_content" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="0dp"
+                        android:clipChildren="false">
+
+                        <me.xiaopan.swsv.SpiderWebScoreView
+                            android:id="@+id/score"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center" />
+
+                        <me.xiaopan.swsv.CircularLayout
+                            android:id="@+id/layout_mainActivity_circular1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:clipChildren="false" />
+                    </FrameLayout>
+
+
+                    <View
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="0dp"
+                        android:background="#e4e4e3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="8dp"></View>
+                    <LinearLayout
+                        android:id="@+id/shout_container"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <com.zonk.fbtest.Views.BariolBoldTextView
+                            android:layout_width="wrap_content"
+                            android:text="SHOUTOUTS"
+                            android:textColor="#424242"
+                            android:textSize="28sp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content" />
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/shouts"
+                            android:layout_width="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_height="160dp"
+                            android:scrollbars="none" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="00dp"
+                        android:background="#e4e4e3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"></View>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:weightSum="2"
+
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/callLL"
+                        android:padding="8dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="#e4e4e3"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+                            android:layout_marginTop="0dp"
+                            android:text="CALL"
+                            android:textSize="20sp"
+                           android:layout_gravity="center"
+                                android:gravity="center"
+                            android:textColor="@color/newpink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/emailLL"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="#e4e4e3"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+                                android:layout_marginTop="0dp"
+                                android:text="EMAIL"
+                                android:textSize="20sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/neworange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="00dp"
+                        android:background="#e4e4e3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"></View>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:id="@+id/linkedin_info_box"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+
+
+
+
+                        <com.zonk.fbtest.Views.BariolBoldTextView
+
+                            android:layout_marginTop="20dp"
+                            android:text="LINKED IN PROFILE"
+                            android:textSize="28sp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:textColor="#0077b5"
+                            android:paddingBottom="10dp"
+                            android:paddingRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"/>
+
+
+                        <com.zonk.fbtest.Views.BariolBoldTextView
+
+                            android:layout_marginTop="20dp"
+                            android:textSize="22sp"
+                            android:textColor="#222222"
+                            android:id="@+id/headline"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+
+                        <com.zonk.fbtest.Views.BariolBoldTextView
+
+                            android:layout_marginTop="0dp"
+                            android:textSize="20sp"
+                            android:textColor="#727272"
+                            android:id="@+id/industry"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#727272"
+                                android:text="POSITION : "
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"/>
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+                                android:layout_marginTop="10dp"
+                                android:textSize="18sp"
+                                android:textColor="#727272"
+                                android:paddingBottom="0dp"
+                                android:id="@+id/position"
+                                android:paddingRight="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#727272"
+
+                                android:text="LOCATION : "
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"/>
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+
+                                android:layout_marginTop="10dp"
+                                android:textSize="18sp"
+                                android:textColor="#727272"
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textColor="#727272"
+
+                                android:text="SUMMARY : "
+
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"/>
+                            <com.zonk.fbtest.Views.BariolBoldTextView
+
+                                android:layout_marginTop="10dp"
+                                android:textSize="18sp"
+                                android:layout_marginRight="8dp"
+                                android:textColor="#727272"
+                                android:id="@+id/summary"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </com.github.florent37.diagonallayout.DiagonalLayout>
+        <RelativeLayout
+            android:layout_width="150dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/picholder"
+
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/overlay2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@color/neworange"
+                />
+
+
+            <com.zonk.fbtest.Utils.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerInParent="true"
+                android:src="@color/white"
+
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_width="wrap_content"
+            android:text="PRASEEM MEHRA"
+            android:textColor="#424242"
+            android:textSize="26sp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/name"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/picholder"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/name"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/picholder"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/emai"/>
+
+                <com.zonk.fbtest.Views.BariolBoldTextView
+                    android:layout_width="wrap_content"
+                    android:text="praseem@zonk.co.in"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:id="@+id/email"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+        android:visibility="gone"
+                android:id="@+id/phnocontainer"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/call"/>
+
+                <com.zonk.fbtest.Views.BariolBoldTextView
+                    android:layout_width="wrap_content"
+                    android:text="+91 8600949056"
+                    android:textColor="#515151"
+                    android:textSize="16sp"
+                    android:id="@+id/phno"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.zonk.fbtest.Views.BariolBoldTextView
+                    android:layout_width="wrap_content"
+                    android:text="verified"
+                    android:textColor="#2ca526"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <com.zonk.fbtest.Views.BariolBoldTextView
+                android:text="Add Contact"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+
+                android:id="@+id/contact"
+                android:layout_gravity="center"
+     android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#424242"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@android:color/transparent"
+    android:id="@+id/main"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+
+        android:layout_height="90dp">
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:alpha=".8"
+            android:background="@drawable/infowoindiw"
+            android:layout_height="wrap_content"></View>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/xy"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/overlay2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="#9c9c9c"
+                    app:border_color="@color/white"
+                    app:border_width="3dp" />
+
+
+
+
+                <com.zonk.fbtest.Utils.CircleImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@color/white"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:id="@+id/title"
+            android:textColor="@color/white"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="xsaxsax"
+            android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

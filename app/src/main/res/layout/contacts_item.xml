@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content">
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/overlay2"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@color/white"-->
+        <!--app:border_color="@color/white"-->
+        <!--app:border_width="4dp" />-->
+
+
+        <com.zonk.fbtest.Utils.CircleImageView
+            android:id="@+id/xyz"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/dashedline"
+            android:layout_centerVertical="true" />
+
+
+        <com.zonk.fbtest.Utils.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@android:color/transparent"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="wrap_content"
+        android:text="xcjsbxj"
+        android:id="@+id/username"
+        android:textColor="#424242"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

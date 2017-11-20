@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+       <!-- <item name="android:colorPrimaryDark">#aeaeaf</item>
+
+        &lt;!&ndash; colorPrimary is used for the default action bar background &ndash;&gt;
+        <item name="android:colorPrimary">@color/off_white</item>
+
+        &lt;!&ndash; colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets &ndash;&gt;
+        <item name="android:colorAccent">@color/green</item>-->
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@color/fb_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+
+
+    <style name="AppThemeC" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:colorPrimaryDark">#aeaeaf</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+    </style>
+
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <item name="windowNoTitle">true</item>
+        <item name="com_accountkit_header_text_color">@android:color/transparent</item>
+        <item name="android:title">xughsav</item>
+        <item name="com_accountkit_header_background_color">#ffffff</item>
+        <item name="com_accountkit_title_text_color">@color/neworange</item>
+
+    </style>
+
+    <style name="AppThemeA" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:background" >@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="AppThemeB" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+    </style>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.zonk.fbtest.PrefActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:id="@+id/fbText"
+
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="LETS BUILD YOUR PROFILE"
+        android:textColor="#424242"
+        android:textSize="26sp" />
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your skills from the options below"
+        android:textColor="#626262"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-20dp"
+        android:textSize="16sp" />
+
+
+
+            <com.zonk.fbtest.Views.BariolBoldTextView
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:text="(minimum three and maximum five)"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textColor="#9c9c9c"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+        android:id="@+id/tablelist"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loading_conatainer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <io.github.yuweiguocn.lib.squareloading.SquareLoading
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:squareColor="@color/neworange"
+                app:squareSize="8dp"
+                app:squareCorner="10dp"
+                app:dividerSize="3dp"
+                android:layout_gravity="center"
+                app:xCount="3"
+                app:yCount="3"
+                />
+        </LinearLayout>
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="DONE"
+            android:background="#424242"
+            android:gravity="center"
+            android:textColor="#ffffff"
+android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:id="@+id/done"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

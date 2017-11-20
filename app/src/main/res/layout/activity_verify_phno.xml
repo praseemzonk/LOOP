@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:id="@+id/fbText"
+      android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HI"
+        android:textColor="#626262"
+        android:textSize="26sp" />
+
+    <com.zonk.fbtest.Views.BariolBoldTextView
+        android:id="@+id/name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buddy"
+        android:layout_toRightOf="@+id/fbText"
+        android:textColor="#626262"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_height="wrap_content">
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welecome to "
+            android:textColor="#626262"
+            android:textSize="26sp" />
+
+        <com.zonk.fbtest.Views.LoopTextView
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOOP"
+            android:layout_toRightOf="@+id/fbText"
+            android:textColor="#626262"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="114dp"
+        android:id="@+id/abc"
+        android:orientation="vertical">
+
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Verify your account."
+            android:textColor="#7c7c7c"
+            android:textSize="22sp" />
+
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Verify your account by updating your phone number."
+            android:textColor="#9a9a9a"
+            android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/abcd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"></LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lay"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="-30dp"
+                android:id="@+id/anima1"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="code_invite_success.json"
+                app:lottie_loop="false" />
+            <View
+                android:layout_width="100dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="120dp"
+                android:background="#fafafa"
+                android:layout_height="100dp"></View>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <com.zonk.fbtest.Views.BariolBoldTextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:id="@+id/proceed"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@color/neworange"
+            android:textColor="#ffffff"
+            android:text="PROCEED"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

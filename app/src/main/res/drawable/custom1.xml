@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="20dp"
+        android:height="20dp"
+        android:top="20dp">
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="75%"
+            android:pivotY="40%">
+            <shape>
+                <solid android:color="#163440" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:width="@dimen/marker_width"
+        android:height="@dimen/marker_height"
+        android:bottom="16dp">
+        <shape>
+            <solid android:color="#163440" />
+            <corners
+                android:topLeftRadius="@dimen/marker_corner_radius"
+                android:topRightRadius="8dp" />
+        </shape>
+
+    </item>
+
+
+    <item
+        android:width="64dp"
+        android:height="52dp"
+        android:bottom="12dp"
+        android:top="32dp">
+        <shape>
+            <solid android:color="#fe696d" />
+            <corners
+                android:bottomLeftRadius="@dimen/marker_corner_radius"
+                android:bottomRightRadius="@dimen/marker_corner_radius" />
+        </shape>
+
+    </item>
+    </layer-list>
